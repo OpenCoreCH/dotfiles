@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/vim-latex-live-preview"]
 	path = .vim/bundle/vim-latex-live-preview
 	url = git://github.com/xuhdev/vim-latex-live-preview.git
+[submodule ".vim/bundle/python-syntax"]
+	path = .vim/bundle/python-syntax
+	url = git://github.com/hdima/python-syntax.git
