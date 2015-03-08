@@ -33,6 +33,7 @@ alias umountb='sudo /home/roman/.skripte/umountb.sh'
 alias temppi='ssh pi@romanpi "/opt/vc/bin/vcgencmd measure_temp"'
 alias suspend-system='sudo systemctl suspend'
 alias pianobar='sudo systemctl start polipo && pianobar'
+alias irssi='TERM=screen-256color irssi'
 
 # suffix aliases
 alias -s pdf=evince
