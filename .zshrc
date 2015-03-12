@@ -13,6 +13,7 @@ autoload -U compinit # auto completition
 compinit
 setopt completealiases # complete aliases, too
 setopt AUTO_PUSHD # push automatically to directory stack with ´cd´
+setopt auto_cd # enter the name of a directory to cd into it
 setopt inc_append_history # don't wait unitl shell exits to append to history
 setopt extended_history # save time stamps
 setopt histignorespace # ignore commands that start with a space
@@ -45,6 +46,9 @@ alias -s xlsx=libreoffice
 alias -s xls=libreoffice
 alias -s docx=libreoffice
 alias -s doc=libreoffice
+
+## cd path for frequently used folders:
+cdpath=(/media/nas/ /media/nas/Dokumente/ /media/nas/Dokumente/1\ -\ Schule)
 
 ## PS1:
 export PS1=$'[\e[1;31m%n\e[0m\e[0;37m@\e[0m\e[0;31m%M\e[0m %~] '
