@@ -149,25 +149,20 @@ bindsym $mod+r mode "resize"
 
 # Start i3blocks to display a workspace bar (plus the system information i3status
 bar {
-        status_command i3blocks
+  status_command i3blocks
         position top
-colors {
-        background #2d2d2d
-        statusline #dedede
-        separator #2d2d2d
-
-        focused_workspace  #d64937 #d64937 #dedede
-        active_workspace   #2d2d2d #5f676a #dedede
-        inactive_workspace #2d2d2d #2d2d2d #888888
-        urgent_workspace   #333333 #900000 #ffffff
-    }
+  colors {
+    separator #666666
+    background #222222
+    statusline #dddddd
+    focused_workspace #0088CC #0088CC #ffffff
+    active_workspace #333333 #333333 #ffffff
+    inactive_workspace #333333 #333333 #888888
+    urgent_workspace #2f343a #900000 #ffffff
+  }
 }
 ## General settings
 # colors (based on numix colors)
-client.focused #d64937 #d64937 #dedede
-client.unfocused #333333 #333333 #dedede
-client.focused_inactive #333333 #333333 #dedede
-client.urgent #383a3b #383a3b #ee0000
 
 # Hide borders
 hide_edge_borders vertical
@@ -197,3 +192,7 @@ exec --no-statup-id start-pulseaudio-x11
 # Startup Applications
 exec --no-startup-id i3-msg 'workspace 9:E-Mail; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 1:Main; exec /usr/bin/firefox'
+client.focused #0088CC #0088CC #ffffff #dddddd
+client.focused_inactive #333333 #333333 #888888 #292d2e
+client.unfocused #333333 #333333 #888888 #292d2e
+client.urgent #2f343a #900000 #ffffff #900000
