@@ -34,6 +34,9 @@ set expandtab "expand tabs to spaces
 set breakindent "take indentation of the line into accoutn when wrapping long lines
 set relativenumber "show relative numbers on the side
 set t_co=256 "256 color terminal
+set tabstop=8 "size of a hard tabstop
+set shiftwidth=4 "size of an indent
+set smarttab "insert indent at the beginning of a line
 
 
 ""search
