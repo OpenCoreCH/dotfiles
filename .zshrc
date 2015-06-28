@@ -50,8 +50,10 @@ alias -s doc=libreoffice
 ## cd path for frequently used folders:
 cdpath=(/media/nas/ /media/nas/Dokumente/ /media/nas/Dokumente/1\ -\ Schule)
 
-## PS1:
-export PS1=$'[\e[1;31m%n\e[0m\e[0;37m@\e[0m\e[0;31m%M\e[0m %~] '
+
+
+## ZSH theme (oh-my-zsh):
+ZSH_THEME="agnoster"
 
 ## environment options
 export EDITOR='vim'
@@ -149,3 +151,15 @@ fortune -s # short fortune
 
 # Show command-not-found
 source /usr/share/doc/pkgfile/command-not-found.zsh
+## oh-my-zsh
+# Settings
+plugins=(gitfast sudo)
+# Initialisation
+# Path to your oh-my-zsh installation.
+ZSH=/usr/share/oh-my-zsh/
+DISABLE_AUTO_UPDATE="true"
+ZSH_CACHE_DIR=$HOME/.oh-my-zsh-cache
+if [[ ! -d $ZSH_CACHE_DIR ]]; then
+mkdir $ZSH_CACHE_DIR
+fi
+source $ZSH/oh-my-zsh.sh
