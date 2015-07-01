@@ -29,7 +29,8 @@ set laststatus=2 "always display status line
 set showmode "show current mode
 set number "show line numbers
 set background=dark
-colorscheme solarized "colorscheme
+let base16colorspace=256
+colorscheme base16-tomorrow "colorscheme
 set expandtab "expand tabs to spaces
 set breakindent "take indentation of the line into accoutn when wrapping long lines
 set relativenumber "show relative numbers on the side

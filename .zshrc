@@ -50,8 +50,6 @@ alias -s doc=libreoffice
 ## cd path for frequently used folders:
 cdpath=(/media/nas/ /media/nas/Dokumente/ /media/nas/Dokumente/1\ -\ Schule)
 
-
-
 ## ZSH theme (oh-my-zsh):
 ZSH_THEME="agnoster"
 
@@ -134,6 +132,10 @@ export LESS_TERMCAP_me=$'\E[0m'           # end of everything
 # Workaround for deprecated GREP_OPTIONS
 alias grep="/usr/bin/grep $GREP_OPTIONS"
 unset GREP_OPTIONS
+
+# base16 shell
+BASE16_SHELL="$HOME/.config/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 ## startup tools
 
